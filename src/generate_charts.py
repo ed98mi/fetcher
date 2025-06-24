@@ -57,6 +57,37 @@ def format_persian_datetime(utc_iso_str):
         # Handle cases where the timestamp format is invalid
         return "فرمت نامعتبر" # "Invalid Format"
 
+def generate_basic_svg(stats_data):
+    width = 800
+    height = len(stats_data['channels']) * 50 + 100
+    
+    svg = f'''<?xml version="1.0" encoding="UTF-8"?>
+    <svg width="{width}" height="{height}" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .row {{ font: 14px Arial; fill: #64748b; }}
+        .score {{ font: bold 14px Arial; fill: #64748b; }}
+    </style>
+    <text x="400" y="40" text-anchor="middle" font-size="20px" font-weight="bold" fill="#64748b">Channel Performance Overview</text>'''
+    
+    for idx, channel in enumerate(stats_data['channels']):
+        y = 80 + (idx * 50)
+        name = channel['url'].split('/')[-1]
+        score = channel['metrics']['overall_score']
+        success = (channel['metrics']['success_count'] / 
+                  max(1, channel['metrics']['success_count'] + channel['metrics']['fail_count'])) * 100
+        
+        svg += f'<rect x="150" y="{y}" width="500" height="30" fill="#eee" rx="5"/>'
+        
+        width = min(500, 5 * score)
+        color = '#22c55e' if score >= 70 else '#eab308' if score >= 50 else '#ef4444'
+        svg += f'<rect x="150" y="{y}" width="{width}" height="30" fill="{color}" rx="5"/>'
+        
+        svg += f'''
+        <text x="140" y="{y+20}" text-anchor="end" class="row">{name}</text>
+        <text x="660" y="{y+20}" text-anchor="start" class="score">{score:.1f}% (S:{success:.0f}%)</text>'''
+    
+    svg += '</svg>'
+    return svg
 
 def generate_html_report(stats_data):
     """
@@ -222,7 +253,12 @@ def main():
         
         # Ensure the output directory exists
         os.makedirs('assets', exist_ok=True)
-        
+
+
+        svg_content = generate_basic_svg(stats_data)
+        with open('assets/channel_stats_chart.svg', 'w', encoding='utf-8') as f:
+            f.write(svg_content)
+    
         # Generate the HTML content
         html_content = generate_html_report(stats_data)
         
