@@ -49,8 +49,6 @@ vless://0132166f-e702-48ed-a9e7-b07af768faf8@195.85.23.251:8880?path=%2FTelegram
 
 vless://0132166f-e702-48ed-a9e7-b07af768faf8@45.149.12.251:8880?path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560&security=&encryption=none&host=cf.d3z.net&type=ws#@vpnclashfa - 17
 
-vless://01d68a9b-be48-4c7b-b4f9-71b29c4cfaca@95.217.206.161:443?encryption=none&security=tls&sni=api.chandplus.com&type=tcp&headerType=none#%40Fserverd_vpn
-
 vless://020f1fc3-02f4-49c4-ae0e-8881ecc82467@speedtest.net:80?mode=auto&path=%2Fhu%3Fed%3D2560&security=none&encryption=none&host=bootstrap.com&type=xhttp#@meli_proxyy
 
 vless://0285b63f-20f3-4e1b-af23-971c106b9800@151.101.3.8:80?mode=auto&path=%2F&security=none&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A%20%221000000%22%2C%20%22scMaxConcurrentPosts%22%3A%20100%2C%20%22scMinPostsIntervalMs%22%3A%2030%2C%20%22xPaddingBytes%22%3A%20%22100-1000%22%2C%20%22noGRPCHeader%22%3A%20false%7D&host=kyeylipolicy.com&type=xhttp#@vpnclashfa - 19
@@ -169,6 +167,8 @@ vless://06e4425e-a8cb-4b63-929f-2105604ab0a9@104.17.36.105:443?security=tls&sni=
 
 vless://06e4425e-a8cb-4b63-929f-2105604ab0a9@108.162.195.173:443?security=tls&sni=yz.ylka.dpdns.org&type=ws&host=yz.ylka.dpdns.org&path=%2F%3Fed%3D2560#@VIProxys
 
+vless://06e4425e-a8cb-4b63-929f-2105604ab0a9@108.162.195.173:443?security=tls&sni=yz.ylka.dpdns.org&type=ws&host=yz.ylka.dpdns.org&path=%2F%3Fed%3D2560#@vpnclashfa - 72
+
 ss://%F0%9F%91%89JOKERRVPN%F0%9F%91%88@speedtest.net:80/?type=ws&encryption=none&host=Loopingshop.com&path=%2F%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN%3Fed%3D2048#@vpnclashfa - 1
 
 ss://03e92910-34b1-4245-ac63-04a865f43cd5@104.21.84.242:443?security=tls&sni=3eRt.4444916.xyz&type=ws&host=3ert.4444916.xyz&path=%2Ff7vKDX2UecxmlPhIJoo2wcE6Q&fp=chrome&alpn=http%2F1.1#@vpnclashfa - 2
@@ -184,8 +184,6 @@ ss://0d26383d-21f7-4159-986a-a7ecac87e072@31.59.184.96:443/?type=tcp&encryption=
 ss://0f7070cd-c91d-4532-a51f-56da4f0e94be@172.67.150.132:443?security=tls&sni=3333e.444682.xyz&type=ws&host=3333e.444682.xyz&path=%2FnSABZLQbEUSLppj7jCmY&fp=chrome&alpn=http%2F1.1#@vpnclashfa - 6
 
 ss://1a79d43f-b41c-496b-a241-dcbeefa81f0e@185.114.72.31:2053?security=tls&sni=0926.qiang2000.link&type=ws&host=0926.qiang2000.link&path=/Telegram@V2ray_Alpha&fp=chrome#@vpnclashfa - 7
-
-ss://1a7a39e4-8c9b-4052-b8b2-c0929536bba5@95.164.4.88:8443?security=tls&sni=pq-brazil1.09vpn.com&type=ws&path=%2Fvless%2F&fp=chrome#@VIProxys
 
 ss://1a7a39e4-8c9b-4052-b8b2-c0929536bba5@95.164.4.88:8443?security=tls&sni=pq-brazil1.09vpn.com&type=ws&path=%2Fvless%2F&fp=chrome#@vpnclashfa - 8
 
@@ -337,6 +335,8 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@193.29.139.173
 
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@193.29.139.206:8080#@vpnclashfa - 87
 
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.158.171.132:8080#@vpnclashfa - 88
+
 hysteria2://%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi@206.71.158.40:35000?sni=pichondan.com&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#🔒 HYSTERIA-UDP 🇳🇱 NL-206.71.158.40:35000
 
 hysteria2://%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi@45.152.240.49:35000?sni=pichondan.com&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#🔒 HYSTERIA-UDP 🇩🇪 DE-45.152.240.49:35000
@@ -348,6 +348,7 @@ hysteria2://%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi@89.144.35.166:35000?sni
 hysteria2://%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi@[2a0c:4ac1:8::121]:35000?sni=pichondan.com&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#🔒 HYSTERIA-UDP 🇩🇪 DE-[2a0c:4ac1:8::121]:35000
 
 hysteria2://%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi@[2a0c:4ac1:8::1cb]:35000?sni=pichondan.com&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#🔒 HYSTERIA-UDP 🇩🇪 DE-[2a0c:4ac1:8::1cb]:35000
+hysteria://108.181.24.77:11512?insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=10&downmbps=50&alpn=h3#🔒 HYSTERIA-UDP 🇺🇸 US-108.181.24.77:11512
 
 hysteria2://%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi@[2a0c:4ac1:8::2ae]:35000?sni=pichondan.com&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#🔒 HYSTERIA-UDP 🇩🇪 DE-[2a0c:4ac1:8::2ae]:35000
 
@@ -356,11 +357,11 @@ hysteria2://%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi@[2a14:3f87:f001:1a::a]:
 hysteria2://14bdcd31-8a9f-4cf1-8fcc-60045900357d@107.172.15.133:3002?sni=it.10101251.xyz#🔒 HYSTERIA-UDP 🇺🇸 US-107.172.15.133:3002
 
 hysteria2://14bdcd31-8a9f-4cf1-8fcc-60045900357d@107.175.34.118:3001?sni=us.10101251.xyz#🔒 HYSTERIA-UDP 🇺🇸 US-107.175.34.118:3001
-hysteria://108.181.24.77:11512?insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=10&downmbps=50&alpn=h3#🔒 HYSTERIA-UDP 🇺🇸 US-108.181.24.77:11512
 
 hysteria2://14bdcd31-8a9f-4cf1-8fcc-60045900357d@107.175.34.118:3002?sni=us.10101251.xyz#12%7CChannel%20id%3A%20%40ShadowProxy66%F0%9F%87%BA%F0%9F%87%B8%20%237
 
 hysteria2://14bdcd31-8a9f-4cf1-8fcc-60045900357d@107.175.34.118:3002?sni=us.10101251.xyz#🔒 HYSTERIA-UDP 🇺🇸 US-107.175.34.118:3002
+hysteria://51.159.226.1:14241?alpn=h3&auth=dongtaiwang.com&downmbps=100&peer=apple.com&upmbps=100#🔒 HYSTERIA-UDP 🇳🇱 NL-51.159.226.1:14241
 
 hysteria2://14bdcd31-8a9f-4cf1-8fcc-60045900357d@107.175.77.38:3001?sni=us.10101251.xyz#🔒 HYSTERIA-UDP 🇺🇸 US-107.175.77.38:3001
 
@@ -373,7 +374,6 @@ hysteria2://1b9c460e-f026-11ef-b737-f23c91cfbbc9@2e7bc2e9-sw04g0-swsmkh-1s0a7.hy
 hysteria2://1d71695a-a45d-4733-9f90-ad56f7a38586@130.61.173.105:50452?insecure=1#🔒 HYSTERIA-UDP 🇩🇪 DE-130.61.173.105:50452
 
 hysteria2://2429bee3-e0c1-47dd-b420-75e6512b184b@129.153.59.86:30300?insecure=1&sni=www.bing.com#🔒 HYSTERIA-UDP 🇨🇦 CA-129.153.59.86:30300
-hysteria://195.154.200.178:46938?upmbps=11&downmbps=55&auth=dongtaiwang.com&insecure=1&peer=apple.com&alpn=h3#🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.200.178:46938
 
 hysteria2://2e73e0a6-3b44-4327-a3f6-66802dcaa094@45.147.201.231:30073?insecure=1&obfs=salamander&obfs-password=NDhhNmY5YTY0MGYzOTgxYQ%3D%3D#🔒 HYSTERIA-UDP 🇷🇺 RU-45.147.201.231:30073
 
@@ -414,6 +414,7 @@ hysteria2://6e9cdc20-b92a-11ef-973a-f23c913c8d2b@9d5cde75-sw3ts0-sww7b0-1qwp5.hy
 hysteria2://8418fb71-419d-4fc3-8b29-d7fee8de76c7@104.168.34.109:443?mport=49999-65000&insecure=1&sni=www.bing.com#🔒 HYSTERIA-UDP 🇺🇸 US-104.168.34.109:443
 
 hysteria2://862e90e1-2f26-4506-b8b9-0adf20da05fc@129.153.59.124:54530?insecure=1&sni=www.bing.com#🔒 HYSTERIA-UDP 🇨🇦 CA-129.153.59.124:54530
+hysteria://176.32.35.226:62003?insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=11&downmbps=55&alpn=h3#🔒 HYSTERIA-UDP 🇷🇺 RU-176.32.35.226:62003
 
 hysteria2://862e90e1-2f26-4506-b8b9-0adf20da05fc@40.233.73.221:47262?insecure=1&sni=www.bing.com#11%7C%40Selinc
 
@@ -468,13 +469,10 @@ hysteria2://b8bd42a9-551f-419d-b70d-4aefdd2cb074@208.87.242.215:443?insecure=1&f
 hysteria2://bc97f674-c578-4940-3548-0a1da46041b9@37.27.65.125:21160?insecure=1&sni=www.bing.com#🔒 HYSTERIA-UDP 🇫🇮 FI-37.27.65.125:21160
 
 hysteria2://c0b2490e-2625-4b9c-b766-50fff8b92a21@193.123.76.84:35000?insecure=1&sni=www.apple.com#🔒 HYSTERIA-UDP 🇦🇪 AE-193.123.76.84:35000
-hysteria://176.32.35.226:62003?insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=11&downmbps=55&alpn=h3#🔒 HYSTERIA-UDP 🇷🇺 RU-176.32.35.226:62003
 
 hysteria2://c2b58ae0-d21c-11ef-b414-f23c91cfbbc9@638bb563-sw3ts0-swwcfg-1eijl.hy2.gotochinatown.net:8443?sni=638bb563-sw3ts0-swwcfg-1eijl.hy2.gotochinatown.net#2%7C%F0%9F%87%BA%F0%9F%87%B8119%20%7C%20%201.2MB/s
 
 hysteria2://c38f1b76-d4a0-4560-8e5b-5e9b9fe903fc@8.220.218.111:443?insecure=1&sni=www.bing.com#🔒 HYSTERIA-UDP 🇰🇷 KR-8.220.218.111:443
-hysteria://195.154.200.40:15010?upmbps=100&downmbps=100&auth=dongtaiwang.com&insecure=1&peer=apple.com&alpn=h3#🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.200.40:15010
-hysteria://51.159.226.1:14241?alpn=h3&auth=dongtaiwang.com&downmbps=100&peer=apple.com&upmbps=100#🔒 HYSTERIA-UDP 🇳🇱 NL-51.159.226.1:14241
 
 hysteria2://c5e6f43c-6f0e-4112-bb97-ed0dba4582d7@111.230.96.212:1000?insecure=1&sni=hk003.ccwink.cc#🔒 HYSTERIA-UDP 🇨🇳 CN-111.230.96.212:1000
 
@@ -487,7 +485,6 @@ hysteria2://c5e6f43c-6f0e-4112-bb97-ed0dba4582d7@82.156.67.44:1000?insecure=1&sn
 hysteria2://cdb63ff9-1767-4a35-97e5-900048e4feb2@104.192.92.99:443?insecure=1&sni=tms.dingtalk.com#🔒 HYSTERIA-UDP 🇸🇬 SG-104.192.92.99:443
 
 hysteria2://cf125f42-759d-4112-82c3-014d2ffcb1e7@185.85.242.177:1443?sni=gbr1.587458.xyz#🔒 HYSTERIA-UDP 🇬🇧 GB-185.85.242.177:1443
-hysteria://185.22.155.71:10803?insecure=1&peer=www.bing.com&auth=dongtaiwang.com&upmbps=1000&downmbps=1000&alpn=h3#🔒 HYSTERIA-UDP 🇷🇺 RU-185.22.155.71:10803
 
 hysteria2://cfe032e4-1bc3-454f-9d09-301b0aea08ff@40.233.70.163:45979?insecure=1&sni=www.bing.com#12%7CChannel%20id%3A%20%40ShadowProxy66%F0%9F%87%A8%F0%9F%87%A6
 
@@ -504,6 +501,8 @@ hysteria2://dongtaiwang.com@108.181.5.130:4710?insecure=1&sni=apple.com#🔒 HYS
 hysteria2://dongtaiwang.com@108.181.5.130:57773?insecure=1&sni=apple.com#12%7C%E2%9A%A1%EF%B8%8F%20%40vpnserverrr%20%28Hysteria%29%20%231
 
 hysteria2://dongtaiwang.com@108.181.5.130:57773?insecure=1&sni=apple.com#🔒 HYSTERIA-UDP 🇺🇸 US-108.181.5.130:57773
+hysteria://195.154.200.178:46938?upmbps=11&downmbps=55&auth=dongtaiwang.com&insecure=1&peer=apple.com&alpn=h3#🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.200.178:46938
+hysteria://195.154.200.40:15010?upmbps=100&downmbps=100&auth=dongtaiwang.com&insecure=1&peer=apple.com&alpn=h3#🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.200.40:15010
 
 hysteria2://dongtaiwang.com@45.129.2.108:30033?insecure=1&sni=www.bing.com#11%2C12%7CChannel%20id%3A%20%40ShadowProxy66%F0%9F%87%B7%F0%9F%87%BA
 
