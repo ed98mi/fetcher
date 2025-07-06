@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclaim Your Nights: A Guide to Resetting Your Sleep Schedule</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .kpi-card {
+            background-color: #FFFFFF;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .kpi-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .flowchart-step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 2px solid;
+            text-align: center;
+            font-weight: 600;
+        }
+        .flowchart-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #9ca3af;
+        }
+        .gemini-btn {
+            background-color: #004AAD;
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gemini-btn:hover {
+            background-color: #0079C2;
+        }
+        .gemini-btn:disabled {
+            background-color: #9ca3af;
+            cursor: not-allowed;
+        }
+        .loader {
+            width: 24px;
+            height: 24px;
+            border: 3px solid #FFF;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+        @keyframes rotation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-6xl font-black text-[#004AAD] mb-4">Reclaim Your Nights</h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">The Science-Backed Guide to Shifting Your Sleep from 6 a.m. to Midnight</p>
+        </header>
+
+        <section id="kpis" class="mb-12 md:mb-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="kpi-card">
+                    <h3 class="text-5xl font-extrabold text-[#0079C2]">24.2</h3>
+                    <p class="text-gray-600 mt-2">Hours in your body's natural "day," causing a natural drift to later bedtimes.</p>
+                </div>
+                <div class="kpi-card">
+                    <h3 class="text-5xl font-extrabold text-[#0079C2]">>60%</h3>
+                    <p class="text-gray-600 mt-2">Of those with severe sleep delay (DSWPD) also face clinical depression.</p>
+                </div>
+                <div class="kpi-card">
+                    <h3 class="text-5xl font-extrabold text-[#0079C2]">10k</h3>
+                    <p class="text-gray-600 mt-2">LUX - The clinical standard for morning light therapy to reset your internal clock.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="problem" class="mb-12 md:mb-20">
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-[#004AAD] mb-4">Your Clock is Out of Sync</h2>
+                         <p class="mb-4 text-gray-700">Consistently sleeping late isn't just a bad habit; it's often a clinical condition called <strong>Delayed Sleep-Wake Phase Disorder (DSWPD)</strong>. This occurs when your internal "master clock," the Suprachiasmatic Nucleus (SCN), becomes misaligned with the 24-hour day. Your body's hormonal signals for sleep (melatonin) and wakefulness (cortisol) are released hours later than they should be, making it biologically impossible to sleep at a conventional time.</p>
+                         <p class="text-gray-700">This misalignment has serious consequences, profoundly impacting mental health. The constant struggle and sleep deprivation are strongly linked to mood disorders, creating a difficult cycle to break.</p>
+                    </div>
+                    <div>
+                         <div class="chart-container h-64 md:h-80">
+                            <canvas id="dswpdDepressionChart"></canvas>
+                        </div>
+                        <p class="text-center text-sm text-gray-500 mt-2">DSWPD has a high comorbidity with depression.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="strategy" class="mb-12 md:mb-20 text-center">
+            <h2 class="text-3xl font-bold text-[#004AAD] mb-2">Choose Your Strategy Wisely</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">The "fastest" way to a stable schedule isn't an overnight fix. It's the one that works with your biology.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 border-2 border-green-500">
+                    <h3 class="text-2xl font-bold text-green-700 mb-4 flex items-center justify-center">Gradual Advance <span class="ml-2 text-3xl">✓</span></h3>
+                    <p class="text-gray-700 mb-6">Shift your bedtime and wake-up time 15-30 minutes earlier every 2-3 days. This slow, steady approach allows your internal clock to adapt, leading to a lasting change with a very low risk of relapse.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 border-2 border-red-500">
+                    <h3 class="text-2xl font-bold text-red-700 mb-4 flex items-center justify-center">The "All-Nighter" <span class="ml-2 text-3xl">✗</span></h3>
+                    <p class="text-gray-700 mb-6">Staying awake all night only creates extreme sleep debt. It doesn't reset your circadian rhythm. You'll crash, and within days, your body will revert to its old, delayed schedule. The relapse risk is extremely high.</p>
+                </div>
+            </div>
+             <div class="mt-8 bg-white rounded-lg shadow-md p-6 md:p-8">
+                 <h3 class="text-2xl font-bold text-[#004AAD] mb-4 text-center">Relapse Risk: A Clear Winner</h3>
+                 <p class="text-gray-600 text-center mb-6">Drastic measures are ineffective because they don't address the underlying biological clock. A gradual approach ensures stability.</p>
+                 <div class="chart-container h-64 md:h-72">
+                    <canvas id="relapseRiskChart"></canvas>
+                </div>
+             </div>
+        </section>
+
+
+        <section id="pillars" class="mb-12 md:mb-20">
+            <h2 class="text-3xl font-bold text-center text-[#004AAD] mb-8">The 3 Pillars of Circadian Realignment</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="kpi-card p-6">
+                    <h3 class="text-2xl font-bold text-[#0079C2] mb-4">1. Light Management</h3>
+                    <div class="text-left text-gray-700 space-y-4">
+                        <p><strong><span class="text-lg">☀️</span> Morning Light:</strong> Your "gas pedal." Get 30-45 mins of bright light (10,000 lux or direct sun) immediately upon waking. This forcefully shifts your clock earlier.</p>
+                        <p><strong><span class="text-lg">🕶️</span> Evening Darkness:</strong> Your "brake pedal." Avoid all screens and dim lights 2-3 hours before your new bedtime. This allows natural melatonin production.</p>
+                    </div>
+                     <div class="chart-container h-48 mt-6">
+                        <canvas id="melatoninSuppressionChart"></canvas>
+                    </div>
+                    <p class="text-center text-sm text-gray-500 mt-2">Evening blue light crushes melatonin levels.</p>
+                </div>
+
+                <div class="kpi-card p-6 flex flex-col">
+                    <h3 class="text-2xl font-bold text-[#0079C2] mb-4">2. Timed Melatonin</h3>
+                    <p class="text-left text-gray-700 mb-6">Use melatonin as a <strong>phase-shifter</strong>, not a sleeping pill. The correct protocol is counter-intuitive: take a <strong>low dose (0.5-1.0 mg)</strong> several hours <strong>before</strong> your target bedtime.</p>
+                    <div class="space-y-4">
+                        <div class="flowchart-step border-green-500 text-green-700 bg-green-50">Take 0.5mg at 8 PM</div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-step border-green-500 text-green-700 bg-green-50">Signals "Dusk" to Brain</div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-step border-green-500 text-green-700 bg-green-50">Clock Shifts Earlier for 12 AM Bedtime</div>
+                    </div>
+                </div>
+
+                <div class="kpi-card p-6 flex flex-col">
+                     <h3 class="text-2xl font-bold text-[#0079C2] mb-4">3. Rigorous Hygiene</h3>
+                    <p class="text-left text-gray-700 mb-6">These habits provide supporting "time cues" that reinforce the new schedule.</p>
+                    <ul class="text-left space-y-3 text-gray-700 mb-6">
+                        <li><span class="font-bold text-[#004AAD]">Consistency is King:</span> Same wake-up time 7 days a week. No exceptions.</li>
+                        <li><span class="font-bold text-[#004AAD]">Cool, Dark, Quiet:</span> Optimize your bedroom environment.</li>
+                        <li><span class="font-bold text-[#004AAD]">Caffeine Curfew:</span> No caffeine within 10-12 hours of your target bedtime.</li>
+                        <li><span class="font-bold text-[#004AAD]">Wind-Down Routine:</span> Create a relaxing, screen-free ritual 30-60 mins before bed.</li>
+                    </ul>
+                    <div class="mt-auto pt-4">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Need ideas?</h4>
+                        <button id="suggestRoutineBtn" class="gemini-btn w-full">✨ Suggest a Wind-Down Routine</button>
+                        <div id="routineSuggestion" class="mt-4 text-left p-4 bg-blue-50 rounded-lg border border-blue-200 hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="action-plan" class="mb-12 md:mb-20">
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-[#004AAD] mb-4 text-center">Static 6-Week Action Plan</h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto text-center">This chart visualizes a sample journey from a 6:00 AM to a 12:00 AM bedtime. For a plan tailored to you, use the generator below.</p>
+                <div class="chart-container h-[40vh] max-h-[500px]">
+                    <canvas id="actionPlanChart"></canvas>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gemini-plan" class="mb-12 md:mb-20">
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-[#004AAD] mb-2 text-center">✨ Your Personalized Plan Generator</h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto text-center">Tell us your current and target bedtimes, and we'll generate a custom step-by-step "Gradual Advance" plan for you.</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-6">
+                    <div>
+                        <label for="currentBedtime" class="font-semibold text-gray-700">Current Bedtime:</label>
+                        <input type="time" id="currentBedtime" class="mt-1 p-2 border rounded-md" value="06:00">
+                    </div>
+                    <div>
+                        <label for="targetBedtime" class="font-semibold text-gray-700">Target Bedtime:</label>
+                        <input type="time" id="targetBedtime" class="mt-1 p-2 border rounded-md" value="00:00">
+                    </div>
+                    <button id="generatePlanBtn" class="gemini-btn mt-4 md:mt-0">Generate My Plan</button>
+                </div>
+                <div id="planResult" class="mt-6"></div>
+            </div>
+        </section>
+
+        <section id="dream-journal" class="mb-12 md:mb-20">
+             <div class="bg-gradient-to-br from-[#004AAD] to-[#0079C2] rounded-lg shadow-xl p-6 md:p-8 text-white">
+                <h2 class="text-3xl font-bold mb-2 text-center">✨ Dream Journal Interpreter</h2>
+                <p class="text-lg text-blue-100 mb-6 max-w-3xl mx-auto text-center">Had a strange dream? Describe it here and our AI will offer a creative, symbolic interpretation to spark your imagination.</p>
+                <textarea id="dreamInput" class="w-full h-32 p-3 rounded-md text-gray-800" placeholder="e.g., I was flying over a city made of cheese..."></textarea>
+                <div class="text-center mt-4">
+                    <button id="interpretDreamBtn" class="gemini-btn bg-white text-[#004AAD] hover:bg-blue-100">Interpret My Dream</button>
+                </div>
+                <div id="dreamResult" class="mt-6 p-4 bg-white/20 rounded-lg hidden"></div>
+            </div>
+        </section>
+
+        <footer class="text-center pt-8 border-t border-gray-200">
+            <p class="text-gray-600">Maintaining your new schedule requires ongoing commitment. The biological tendency to delay may remain.</p>
+            <p class="mt-2 font-semibold text-[#004AAD]">If you struggle to make progress or suspect other issues, consult a sleep specialist.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const apiKey = "";
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+        async function callGemini(payload) {
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            if (!response.ok) {
+                throw new Error(`API call failed with status: ${response.status}`);
+            }
+            return response.json();
+        }
+        
+        function wrapLabels(label, maxWidth) {
+            if (typeof label !== 'string' || label.length <= maxWidth) {
+                return label;
+            }
+            const words = label.split(' ');
+            let lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxWidth && currentLine.length > 0) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            lines.push(currentLine.trim());
+            ret
