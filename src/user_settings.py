@@ -4,7 +4,7 @@
 # Add or remove URLs as needed. All URLs in this list are automatically enabled.
 SOURCE_URLS = [
 ```
-"https://t.me/s/ArV2ray"
+"https://t.me/s/ArV2ray",
 # "https://raw.githubusercontent.com/valid7996/Gozargah/refs/heads/main/Gozargah_Sub",
 # "https://raw.githubusercontent.com/10ium/V2Hub3/main/Split/Normal/vless",
 # "https://raw.githubusercontent.com/mahsanet/MahsaFreeConfig/refs/heads/main/mci/sub_1.txt",
