@@ -79,7 +79,7 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇬🇧 vless-1ac867e8 (United Kingdom)",
+        "🇬🇧 vless-5ff7f8e3 (United Kingdom)",
         "direct"
       ]
     },
@@ -87,7 +87,7 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇬🇧 vless-1ac867e8 (United Kingdom)"
+        "🇬🇧 vless-5ff7f8e3 (United Kingdom)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -99,7 +99,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 vless-1ac867e8 (United Kingdom)",
+      "tag": "🇬🇧 vless-5ff7f8e3 (United Kingdom)",
       "server": "193.46.81.83",
       "server_port": 443,
       "uuid": "telegram-id-ArV2ray",
