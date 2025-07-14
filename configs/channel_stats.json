@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-07-14T01:57:37.727506+00:00",
+  "timestamp": "2025-07-14T03:44:16.154283+00:00",
   "channels": [
     {
       "url": "https://t.me/s/ArV2ray",
@@ -8,11 +8,11 @@
         "total_configs": 2,
         "valid_configs": 1,
         "unique_configs": 1,
-        "avg_response_time": 0.45,
+        "avg_response_time": 0.75,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 86.82,
-        "last_success": "2025-07-14T01:57:37.726897+00:00",
+        "overall_score": 86.37,
+        "last_success": "2025-07-14T03:44:16.153653+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
