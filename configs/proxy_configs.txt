@@ -1,5 +1,0 @@
-//profile-title: Autumn🍁Cicada
-//profile-update-interval: 1
-
-vless://telegram-id-ArV2ray@193.46.81.83:443?path=%2Ftelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%2Ctelegram-ArV2ray%3Fed%3D2048&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&fp=firefox&type=ws&sni=a.speedtest2028.com#TLS-test%20%7C%20%40ArV2ray
-
