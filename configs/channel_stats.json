@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-08-11T16:29:44.390714+00:00",
+  "timestamp": "2025-08-11T17:22:01.678678+00:00",
   "channels": [
     {
       "url": "https://t.me/s/ArV2ray",
       "enabled": false,
       "metrics": {
-        "total_configs": 5,
+        "total_configs": 4,
         "valid_configs": 0,
         "unique_configs": 0,
         "avg_response_time": 0,
