@@ -79,7 +79,7 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇺🇸 vless-dd679952 (United States)",
+        "🇺🇸 vless-fc631420 (United States)",
         "direct"
       ]
     },
@@ -87,7 +87,7 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸 vless-dd679952 (United States)"
+        "🇺🇸 vless-fc631420 (United States)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -99,7 +99,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 vless-dd679952 (United States)",
+      "tag": "🇺🇸 vless-fc631420 (United States)",
       "server": "test.fast.hosting-ip.com",
       "server_port": 80,
       "uuid": "telegram-id-ArV2ray",
