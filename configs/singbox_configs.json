@@ -79,7 +79,7 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇬🇧 vless-e1125d61 (United Kingdom)",
+        "🇺🇸 vless-dd679952 (United States)",
         "direct"
       ]
     },
@@ -87,7 +87,7 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇬🇧 vless-e1125d61 (United Kingdom)"
+        "🇺🇸 vless-dd679952 (United States)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -99,20 +99,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 vless-e1125d61 (United Kingdom)",
-      "server": "193.46.81.83",
-      "server_port": 443,
+      "tag": "🇺🇸 vless-dd679952 (United States)",
+      "server": "test.fast.hosting-ip.com",
+      "server_port": 80,
       "uuid": "telegram-id-ArV2ray",
       "flow": "",
       "tls": {
         "enabled": true,
-        "server_name": "a.speedtest2028.com",
+        "server_name": "test.fast.hosting-ip.com",
         "insecure": true
       },
-      "transport": {
-        "path": "/telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048",
-        "type": "ws"
-      }
+      "transport": {}
     }
   ],
   "route": {
