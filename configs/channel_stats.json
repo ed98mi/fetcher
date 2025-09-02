@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-02T03:06:46.213834+00:00",
+  "timestamp": "2025-09-02T04:25:04.324136+00:00",
   "channels": [
     {
       "url": "https://t.me/s/ArV2ray",
@@ -12,7 +12,7 @@
         "success_count": 1,
         "fail_count": 0,
         "overall_score": 80.49,
-        "last_success": "2025-09-02T03:06:46.213092+00:00",
+        "last_success": "2025-09-02T04:25:04.323560+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
