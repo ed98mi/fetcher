@@ -79,7 +79,7 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇺🇸 vless-35b6c265 (United States)",
+        "🇨🇦 vless-0369d722 (Canada)",
         "direct"
       ]
     },
@@ -87,7 +87,7 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸 vless-35b6c265 (United States)"
+        "🇨🇦 vless-0369d722 (Canada)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -99,17 +99,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 vless-35b6c265 (United States)",
-      "server": "test.fast.hosting-ip.com",
-      "server_port": 80,
-      "uuid": "telegram-id-ArV2ray",
+      "tag": "🇨🇦 vless-0369d722 (Canada)",
+      "server": "172.66.40.99",
+      "server_port": 8080,
+      "uuid": "telegram-id-Arfilter",
       "flow": "",
       "tls": {
         "enabled": true,
-        "server_name": "test.fast.hosting-ip.com",
+        "server_name": "172.66.40.99",
         "insecure": true
       },
-      "transport": {}
+      "transport": {
+        "path": "/telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048",
+        "headers": {
+          "Host": "16ae.irblood.ir"
+        },
+        "type": "ws"
+      }
     }
   ],
   "route": {
