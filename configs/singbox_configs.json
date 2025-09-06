@@ -79,7 +79,7 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇨🇦 vless-9ffc5802 (Canada)",
+        "🇨🇦 vless-bf109122 (Canada)",
         "direct"
       ]
     },
@@ -87,7 +87,7 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇨🇦 vless-9ffc5802 (Canada)"
+        "🇨🇦 vless-bf109122 (Canada)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -99,7 +99,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 vless-9ffc5802 (Canada)",
+      "tag": "🇨🇦 vless-bf109122 (Canada)",
       "server": "172.66.40.99",
       "server_port": 8080,
       "uuid": "telegram-id-Arfilter",
